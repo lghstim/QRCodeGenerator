@@ -20,6 +20,7 @@
 		4D248F521A751CE300E44E6B /* QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D248F511A751CE300E44E6B /* QRCode.swift */; };
 		4D9240641A78050C0069D66D /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9240631A78050C0069D66D /* UIImageViewExtension.swift */; };
 		4D9240661A7805310069D66D /* CIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9240651A7805310069D66D /* CIColorExtension.swift */; };
+		51FD17B322B2C140CC4885F1 /* Pods_QRCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF21FE6A59560E4CB8E2228 /* Pods_QRCode.framework */; };
 		AA24AF3E1C247A7C00D1BEC7 /* CIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA24AF3D1C247A7C00D1BEC7 /* CIImageExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -78,7 +79,10 @@
 		4D248F511A751CE300E44E6B /* QRCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCode.swift; sourceTree = "<group>"; };
 		4D9240631A78050C0069D66D /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		4D9240651A7805310069D66D /* CIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CIColorExtension.swift; sourceTree = "<group>"; };
+		99A8C19A4B10928D7A06AD5F /* Pods-QRCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRCode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QRCode/Pods-QRCode.debug.xcconfig"; sourceTree = "<group>"; };
 		AA24AF3D1C247A7C00D1BEC7 /* CIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CIImageExtension.swift; sourceTree = "<group>"; };
+		DCAB381F2EDAFA7417A75686 /* Pods-QRCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-QRCode/Pods-QRCode.release.xcconfig"; sourceTree = "<group>"; };
+		DEF21FE6A59560E4CB8E2228 /* Pods_QRCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QRCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51FD17B322B2C140CC4885F1 /* Pods_QRCode.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +113,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E5A94C23064C41B57CD9396 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				99A8C19A4B10928D7A06AD5F /* Pods-QRCode.debug.xcconfig */,
+				DCAB381F2EDAFA7417A75686 /* Pods-QRCode.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4D248EFE1A751C3700E44E6B = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +129,8 @@
 				4D248F321A751C7800E44E6B /* QRCode */,
 				4D248F411A751C7800E44E6B /* QRCodeTests */,
 				4D248F081A751C3700E44E6B /* Products */,
+				0E5A94C23064C41B57CD9396 /* Pods */,
+				A51B42F1D4D2AE2C2681139C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -187,6 +203,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A51B42F1D4D2AE2C2681139C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEF21FE6A59560E4CB8E2228 /* Pods_QRCode.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -224,10 +248,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D248F4A1A751C7800E44E6B /* Build configuration list for PBXNativeTarget "QRCode" */;
 			buildPhases = (
+				6A7AB416641B5A4CAF306EAF /* [CP] Check Pods Manifest.lock */,
 				4D248F2C1A751C7800E44E6B /* Sources */,
 				4D248F2D1A751C7800E44E6B /* Frameworks */,
 				4D248F2E1A751C7800E44E6B /* Headers */,
 				4D248F2F1A751C7800E44E6B /* Resources */,
+				32408D202D7B1D953E137CC1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -270,6 +296,7 @@
 				TargetAttributes = {
 					4D248F061A751C3700E44E6B = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 67D5VP8GSS;
 						LastSwiftMigration = 0800;
 					};
 					4D248F301A751C7800E44E6B = {
@@ -329,6 +356,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32408D202D7B1D953E137CC1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QRCode/Pods-QRCode-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A7AB416641B5A4CAF306EAF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4D248F031A751C3700E44E6B /* Sources */ = {
@@ -490,6 +550,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 67D5VP8GSS;
 				INFOPLIST_FILE = Example/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -503,6 +564,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 67D5VP8GSS;
 				INFOPLIST_FILE = Example/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -514,6 +576,7 @@
 		};
 		4D248F4B1A751C7800E44E6B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99A8C19A4B10928D7A06AD5F /* Pods-QRCode.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -543,6 +606,7 @@
 		};
 		4D248F4C1A751C7800E44E6B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCAB381F2EDAFA7417A75686 /* Pods-QRCode.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
